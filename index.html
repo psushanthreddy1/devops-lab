@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P.S.R Home</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+    .container {
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    a {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #ff9800;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+    a:hover {
+      background: #e68900;
+    }
+  </style>
 </head>
 <body>
-    <form id="userForm">
-        <h1>User Registration Form</h1>
-        
-        <!-- Full Name Input -->
-        <label for="fullName">Full Name:</label><br>
-        <input type="text" id="fullName" name="fullName" required><br>
-
-        <!-- Email Input -->
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-
-        <!-- Password Input -->
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br>
-
-        <!-- Gender Radio Buttons -->
-        <label>Gender:</label><br>
-        <label><input type="radio" name="gender" value="Male" required> Male</label>
-        <label><input type="radio" name="gender" value="Female"> Female</label><br>
-
-        <!-- Date Input -->
-        <label for="dob">Date of Birth:</label><br>
-        <input type="date" id="dob" name="dob" required><br><br>
-
-        <!-- Country Select -->
-        <label for="country">Country:</label><br>
-        <select name="country" id="country" required>
-            <option value="india">India</option>
-            <option value="usa">USA</option>
-            <option value="france">France</option>
-            <option value="russia">Russia</option>
-            <option value="china">China</option>
-        </select><br><br>
-
-        <input type="submit" value="Register">
-    </form>
-
-    <div id="message"></div>
-
-    <script src="./index.js"></script>
+  <div class="container">
+    <h1>Welcome to P.S.R Event Portal</h1>
+    <p>Click below to register for the event.</p>
+    <a href="registration.html">Go to Registration Form</a>
+  </div>
 </body>
 </html>
