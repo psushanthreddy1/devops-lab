@@ -8,9 +8,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh '''
-                    mkdir -p deployed_html
-                    cp *.html deployed_html/
+                bat '''
+                    if not exist deployed_html mkdir deployed_html
+                    copy *.html deployed_html\\
                 '''
             }
         }
