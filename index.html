@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <form id="userForm">
+        <h1>User Registration Form</h1>
+        
+        <!-- Full Name Input -->
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+
+        <!-- Gender Radio Buttons -->
+        <label>Gender:</label><br>
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label><br>
+
+        <!-- Date Input -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Country Select -->
+        <label for="country">Country:</label><br>
+        <select name="country" id="country" required>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="france">France</option>
+            <option value="russia">Russia</option>
+            <option value="china">China</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <div id="message"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
